@@ -35,8 +35,11 @@ int main()
 
     // ceil and floor
     // ceil is a function always rounds a number up to the next largest integer.
+    //      source: (https://www.programiz.com/c-programming/library-function/math.h/ceil)
+
     // and floor is a function returns the largest integer less than or equal
     //    to a given number.
+    //      source: (https://www.programiz.com/c-programming/library-function/math.h/floor)
     int closeLeft, closeRight;
 
     closeLeft = floor(neeko);
