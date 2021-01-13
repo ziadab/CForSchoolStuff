@@ -33,20 +33,41 @@
  * 4 - we loop on the number until he become 0
 */
 
+// WHILE LOOP 
+
+// int main()
+// {
+//     int number, reversed = 0, lastDegit;
+
+//     printf("gimme a number: ");
+//     scanf("%d", &number);
+
+//     while (number != 0)
+//     {
+//         lastDegit = number % 10;
+//         reversed = (reversed * 10) + lastDegit;
+//         number /= 10;
+//     }
+
+//     printf("Reverse number: %d\n", reversed);
+//     return 0;
+// }
+
+
 int main()
 {
-    int number, reversed = 0, lastDegit;
+    int kata, yone, lissandra;
+    printf("Gimme a number: ");
+    scanf("%d",&kata);
 
-    printf("gimme a number: ");
-    scanf("%d", &number);
+    lissandra = kata;
+    yone = (kata % 10) * 100;
 
-    while (number != 0)
-    {
-        lastDegit = number % 10;
-        reversed = (reversed * 10) + lastDegit;
-        number /= 10;
-    }
+    kata = kata / 10;
+    yone = yone +(kata % 10) * 10;
+    kata /=10;
+    yone += kata;
 
-    printf("Reverse number: %d\n", reversed);
+    printf("the reverse is : %d\n",yone);
     return 0;
 }
