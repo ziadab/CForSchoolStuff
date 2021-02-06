@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
     printf("Donnez deux nombres: \n");
     scanf("%d%d", &fiora, &camille);
 
-    printf("Le plus grand numbre est: %d\n", (camille + fiora + abs(camille - fiora)) / 2);
+    printf("Le plus grand numbre est: %d\n", (fiora > camille) ? fiora : camille); //(camille + fiora + abs(camille - fiora)) / 2);
 
     return 0;
 }
